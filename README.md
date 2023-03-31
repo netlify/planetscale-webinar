@@ -8,8 +8,8 @@ You can fully take this project and spin it up on your own Netlify account, let'
 
 | Environment Variable | Description |
 | --- | --- |
-| SLACK_CLIENT_ID | |
-| SLACK_CLIENT_SECRET | |
-| SLACK_SIGNING_SECRET | |
-| OPENAI_API_KEY | |
-| ENCRYPTION_KEY | |
+| SLACK_CLIENT_ID | OAuth Client ID - identifies our Slack App for the "Add to Slack" button |
+| SLACK_CLIENT_SECRET | OAuth Client Secret - authenticates us against slack for exchanging OAuth codes for tokens |
+| SLACK_SIGNING_SECRET | Slack Signing Secret - use to ensure webhook requests are valid (we don't use this 🤫) |
+| OPENAI_API_KEY | OpenAI API key - we need this to summarise threads! |
+| ENCRYPTION_KEY | 32-bit key used to encrypt/decrypt OAuth tokens, can be generated easily with <br /><br />`openssl rand -base64 32`|
